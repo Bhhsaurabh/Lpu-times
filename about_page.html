@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/about.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <title>about us</title>
+</head>
+<body>
+    <div class="header">
+        <nav>
+            <a href="#" class="logo"><img src="logo/logo.png" height="75px" width="75px"><span>LPU TIMES </span> 
+            </a>
+            <ul class="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="login_page.html" class="user"><i class="ri-user-fill"></i>Sign in</a></li>
+                <li><a href="register_page.html">Register</a><li>
+                </ul>
+                <button type="button" onclick="toggleBtn()" id="btn"><span></span></button>
+        </nav>
+    </div>
+    <div class="deco">
+        <img src="logo/lamp.png" class="lamp">
+        <img src="logo/light.png" class="light" id="light">
+    </div>
+    <div class = "content">
+        <h1>Welcome <br> to Lpu Times </h1><br>
+        <p>The medium of connecting to the world Lpu Times removing all the barriers<br>
+        which stoping you to connecting to the world</p>
+        <a href="#" class="about"><span>Know more about us <span></a>
+        </div>
+
+    </div>
+    <script>
+        var btn = document.getElementById("btn");
+        var light = document.getElementById("light")
+
+        function toggleBtn(){
+            btn.classList.toggle("active");
+            light.classList.toggle("on");
+
+        }
+
+ </script>
+    
+</body>
+</html>

@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title> Lpu Times </title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/slider.css">
+
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet"> 
+    </head>
+    <body onload="initClock()">
+        <!-- <img class="img" src="logo/background.png"> -->
+        <header> 
+            <a href="#" class="logo"><img src='logo/logo.png' height="75px" width="75px">  <span>LPU TIMES </span> 
+        </a>
+        <ul class="navbar">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">Global News </a> </li>
+            <li><a href="#">Community </a></li>
+            <li><a href="#">Academics</a></li>
+            <li><a href="about_page.html">About Us</a></li>
+        </ul>
+        <div class="main">
+            <a href="login_page.html" class="user"><i class="ri-user-fill"></i> Sign In</a>
+            <a href="register_page.html"> Register</a>
+            <div class="bx bx-menu" id="menu-icon"></div>
+        </div>
+        </header>
+        <!--image slider start-->
+
+
+    <div class="slider">
+        <div class="slides">
+          <!--radio buttons start-->
+          <input type="radio" name="radio-btn" id="radio1">
+          <input type="radio" name="radio-btn" id="radio2">
+          <input type="radio" name="radio-btn" id="radio3">
+          <input type="radio" name="radio-btn" id="radio4">
+          <!--radio buttons end-->
+          <!--slide images start-->
+          <div class="slide first">
+            <img src="logo/My project-1.png" alt="">
+          </div>
+          <div class="slide">
+            <img src="logo/My project-2.png" alt="">
+          </div>
+          <div class="slide">
+            <img src="logo/My project-3.png" alt="">
+          </div>
+          <div class="slide">
+            <img src="logo/My project-4.png" alt="">
+          </div>
+          <!--slide images end-->
+          <!--automatic navigation start-->
+          <div class="navigation-auto">
+            <div class="auto-btn1"></div>
+            <div class="auto-btn2"></div>
+            <div class="auto-btn3"></div>
+            <div class="auto-btn4"></div>
+          </div>
+          <!--automatic navigation end-->
+        </div>
+        <!--manual navigation start-->
+        <div class="navigation-manual">
+          <label for="radio1" class="manual-btn"></label>
+          <label for="radio2" class="manual-btn"></label>
+          <label for="radio3" class="manual-btn"></label>
+          <label for="radio4" class="manual-btn"></label>
+        </div>
+        <!--manual navigation end-->
+      </div>
+      <!--image slider end-->
+  
+      <script type="text/javascript">
+      var counter = 1;
+      setInterval(function(){
+        document.getElementById('radio' + counter).checked = true;
+        counter++;
+        if(counter > 4){
+          counter = 1;
+        }
+      }, 5000);
+      </script>
+
+      <!--digital clock start-->
+    <div class="datetime">
+      <div class="date">
+        <span id="dayname">Day</span>,
+        <span id="month">Month</span>
+        <span id="daynum">00</span>,
+        <span id="year">Year</span>
+      </div>
+      <div class="time">
+        <span id="hour">00</span>:
+        <span id="minutes">00</span>:
+        <span id="seconds">00</span>
+        <span id="period">AM</span>
+      </div>
+    </div>
+    <div class="he">
+      <h1> The events currently <br>going on.....</h1>
+    <a href="#test"> <button class="btn btn-success">Scroll Down</button> </a>
+    </div>
+    <div class="news-content" id="test">
+      <h3>LPU achieved record-breaking placement in 2022</h3>
+      <img src="logo/news1.jpg" alt="" class="new1"><br>
+      <p>Continuing its legacy of unbeatable placement records, 
+        Lovely Professional University (LPU) celebrated its annual event
+         ‘Placement Day-2022’ at the campus. Thousands of the placed students as 
+         well as their proud parents, mentors and teachers participated in the 
+         
+         celebrations.Setting yet another benchmark; 8400+ offers were extended to 
+         students of various programs of the 2022 batch.For the 2022 batch, 
+         the highest package for engineering stood at 62.72 lakhs the highest 
+         salary package secured by students from the current batch, yet to graduate 
+         in the summer of 2023, is Rs 54.75 Lacs; and, the highest monthly internship 
+         stipend offered is Rs 1.6 Lac now.  The recruiter Amazon has also hired LPU 
+         students at the package of INR 46.4 Lakh. Earlier, Google also selected an LPU student
+          at INR 48 Lakh.  455 students have been placed in packages between 10 Lacs
+           to 62.72 Lacs from class of 2022, 2021; where, 18 students are placed at
+            CTC Rs 40 Lacs or above; and, 32 students have been placed at CTC Rs 30-40 Lacs
+             from the class of 2021 and 2022. Such commendable stories indicate how LPU has
+              emerged as a top institute in India, where coveted placement records
+               are becoming a normal norm.</p><br><br>
+          <h3>LPU students awarded ‘The Most Innovative Idea’ in Study Australia Entrepreneurship Challenge </h3>
+          <img src="logo/news2.jpg" alt="" class="new2">
+          <p>Once again, LPU is proved to be a hub of innovation.
+             LPU students’ team ‘Urban Settlers’ were awarded AUS $5000
+              work scholarship and declared ‘Most Innovative Idea’ at ‘Study
+               Australia Entrepreneurship Challenge’. LPU engineering students
+                Ayush Singh, Deepak Gill, Mohit, Abhishek Singh and Anuj Kumar,
+                 members of the team ‘Urban Settlers’, have proved their mettle
+                 in a competition which saw a participation of 36 different teams 
+                 across India.Their venture named RoomsVital has a vision to provide s
+                 ustainable and affordable housing solutions focusing on smart locks. 
+                 They pitched their idea to experts from SAEC, Indian Industry. The 
+                 competition was organized by the Australian Trade and Investment Commission
+                  where biggest universities from all over India participated. The Study
+                   Australia Entrepreneurship Challenge was an initiative to engage highly-skilled
+                    students from the Indian higher education institutes who participated in a 
+                    series of hybrid events, which were based on Ted X-meets-Hackathon.</p><br><br>
+              <h3>LPU hosted 11th annual celebrations of Antara Dance & Creative Art Studio</h3>
+              <img src="logo/news3.jpg" alt="" class="new3">
+              <p>Providing the largest platform to the growing and hitherto h
+                idden Indian and international talent, Lovely Professional University 
+                (LPU) hosted 11th annual recital revels of Antara Dance Studio (Jalandhar)
+                 at its Shanti Devi Mittal Auditorium. More than 100 students of the studio
+                  from different walks of life and age groups performed on beautiful choreographies
+                   and compositions. Commencing the annual show ‘Dream Catchers-2022′, titled
+                    as ‘Wings of Joy’; the first group performance echoed liberty for dancing 
+                    on the song “Udne Do”. It was followed by online and offline Kathak performances
+                     worshipping Lords Rama & Krishna; Guru Vandana; Thumri dance depicting ‘Asht Naayika’ 
+                     for pangs of love by Director Nidhi Mittal, herself; and, many other dance forms. LPU’s 
+                     Pro Chancellor Ms. Rashmi Mittal chaired the occasion. She encouraged the participants 
+                     with her support </p><br><br>
+                  <h3>LPU BOXER CLINCHES BRONZE AT YOUTH WOMEN’S WORLD BOXING CHAMPIONSHIPS</h3>
+                  <img src="logo/news4.jpg">
+                  <p>Students at LPU have consistently been an inspiration to their country. 
+                    Tamanna, a student at LPU and a professional boxer, recently won Bronze medal 
+                    in the 50-kilogram division at the IBA Youth Women’s World Boxing Championships, which were held 
+                    in Spain. “I have practiced a lot for the last few months and this is getting me results. I would 
+                    like to thank my coach, my family and support staff for always standing by my side,” says Tamanna.
+                     The 25-person Indian team brought home 11 medals overall, including four gold, three silver, 
+                    and four bronze. This year’s championships saw participation of close to 
+                    600 boxers from 73 countries. 
+                  </p>
+                  <h3>LPU Verto received the Indian Achievers Award</h3>
+                  <img src="logo/news5.jpg" alt="">
+                  <p>The Indian Achievers Award is a well-known and distinguished award given
+                     to those who have achieved enormous success in their respective industries 
+                     and are capable of pushing the boundaries.Pankaj G, a student of B. Tech. 
+                     ECE and CEO of Renovation Tech Robotics and Aeromodelling, was given the
+                      Indian Achievers Award for his outstanding professional achievement and contribution 
+                      towards nation building! Lovely Professional University (LPU) is supportive of its students’ 
+                      ambitions because it has faith in their Vertos and provides them with the resources they require.
+                       Pankaj is a National Level winner at India Skills 2022 competition. We at LPU want to see our Vertos
+                        excelling in their respective fields so that they could win this prestigious award.
+                     Heartfelt congratulations to our Verto and our best wishes to him for his future endeavours.</p><br><br>
+
+                     <h3>LPU scientist’s ‘Plasmas-Laser’ research acknowledged by world’s scientists in Italy </h3>
+                     <img src="logo/news6.jpg" alt="">
+                     <p>One of the scientists at Lovely Professional University, Prof Dr Jyoti Rajput,
+                       from the Physics department, was lately invited to present her significant scientific research for
+                       “Plasmas in Super-Intense Laser Fields”, at Erice (Sicily) in Italy. Her research is going
+                       to be highly beneficial in the varied sophisticated activities involved in the domains of surgery,
+                        space and more. Occasion was the 9th edition of the summer school ‘Plasmas in Super-Intense Laser
+                         Fields’ in Erice, Sicily, Italy. It was organized jointly by the Department of Energy of the 
+                         Polytechnic of Milan, (Politecnico di Milano – Dipartimento di Energia), Italy; and, the University
+                          of Bordeaux, France.
+                      Dr. Kailash Juglan congratulated the hardworking researcher at the university and encouraged
+                       her to continue with more of such illustrious research works.</p><br><br>
+
+    </div>
+    <!--digital clock end-->
+
+    <script type="text/javascript">
+    function updateClock(){
+      var now = new Date();
+      var dname = now.getDay(),
+          mo = now.getMonth(),
+          dnum = now.getDate(),
+          yr = now.getFullYear(),
+          hou = now.getHours(),
+          min = now.getMinutes(),
+          sec = now.getSeconds(),
+          pe = "AM";
+
+          if(hou >= 12){
+            pe = "PM";
+          }
+          if(hou == 0){
+            hou = 12;
+          }
+          if(hou > 12){
+            hou = hou - 12;
+          }
+
+          Number.prototype.pad = function(digits){
+            for(var n = this.toString(); n.length < digits; n = 0 + n);
+            return n;
+          }
+
+          var months = ["January", "February", "March", "April", "May", "June", "July", "Augest", "September", "October", "November", "December"];
+          var week = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+          var ids = ["dayname", "month", "daynum", "year", "hour", "minutes", "seconds", "period"];
+          var values = [week[dname], months[mo], dnum.pad(2), yr, hou.pad(2), min.pad(2), sec.pad(2), pe];
+          for(var i = 0; i < ids.length; i++)
+          document.getElementById(ids[i]).firstChild.nodeValue = values[i];
+    }
+
+    function initClock(){
+      updateClock();
+      window.setInterval("updateClock()", 1);
+    }
+    </script>
+    <div class="footer">
+    <p class="cp-text">
+        © Copyright 2022 LPU TIMES. All rights reserved.
+    </p>
+    </div>
+
+
+    </body>
+</html>
+
+
+

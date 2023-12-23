@@ -1,0 +1,146 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --bg-color:#222327;
+    --text-color:#fff;
+    --main-color:#29fd53;
+
+}
+body{
+    background:var(--bg-color);
+    font-family: 'poppins',sans-serif;
+}
+.header{
+    position:fixed;
+    width:100%;
+    top:0;
+    right:0;
+    z-index:1000;
+    display: flex;
+    align-items:center;
+    justify-content:space-between;
+    background:transparent;
+    padding:20px 5%;
+    transition:all .50s ease;
+}
+.logo{
+    display:flex;
+    align-items: center;
+    color:var(--text-color);
+    margin-left: 3px;
+    width: 700px;
+    text-decoration: none;
+}
+
+.logo span{
+    display: flex;
+    align-items: center;
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+nav{
+    display: flex;
+    align-items: center;
+}
+.navbar{
+    display: flex;
+    margin:0 10px;
+    list-style: none;
+    text-decoration: none;
+}
+.navbar a{
+    color:var(--text-color);
+    margin:0 30px;
+    font-size: 1.1rem;
+    font-weight:500;
+    transition: all .50s ease;
+    text-decoration: none;
+}
+.navbar a:hover{
+    color:var(--main-color)
+}
+.navbar a.active{
+    color:var(--main-color)
+}
+.user{
+    display: flex;
+    align-items: center;
+}
+.navbar a i{
+    align-items: center;
+    color:var(--main-color);
+    padding-right:5px;
+    font-size: 20px;
+}
+button{
+    background: #efefef;
+    height:30px;
+    width:60px;
+    border-radius: 20px;
+    cursor: pointer;
+    border:0;
+    outline: 0;
+    transition:.5s;
+}
+button span{
+    display:block;
+    background:#999;
+    height:26px;
+    width: 26px;
+    border-radius: 50%;
+    margin-left:2px;
+    transition: .5s,.5s;
+
+}
+.lamp{
+    height: 350px;
+    width: 180px;
+    display: block;
+    margin-left: 26%;
+    margin-top: -59px;
+
+}
+.light{
+    display: block;
+    width:635px ;
+    height:341px ;
+    margin-left:118px ;
+    margin-top:-7px;
+    margin-bottom:-10px ;
+    opacity: 0;
+    transition: .5s;
+}
+.active{
+    background:green;
+}
+.active span{
+    background: #fff;
+    margin-left: 31px;
+}
+.on{
+    opacity: 1;
+}
+.content{
+    color:var(--text-color);
+    margin-left:50%;
+    margin-top: -34%;
+}
+h1{
+    font-size: 65px;
+    font-weight: 400;
+
+}
+.about{
+    position: relative;
+    text-decoration: none;
+    background:var(--main-color);
+    color:var(--text-color);
+    padding: 12px 30px;
+    display: inline-block;
+    margin-top:30px;
+    font-size: 18px;
+    border-radius:30px;
+}
